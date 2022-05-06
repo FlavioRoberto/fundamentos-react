@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import "./index.css";
-
-const tag = <strong>Hello world</strong>;
+import First from "./components/basics/First";
 
 const el = document.getElementById("root");
-ReactDOM.render(<div>{tag}</div>, el);
+ReactDOM.render(<div>
+    <First></First>
+</div>, el);
