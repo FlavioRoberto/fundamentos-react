@@ -5,7 +5,7 @@ function getRandomInt(min, max) {
 }
 
 const Random = (props) => {
-  let { min, max } = props;
+  const { min, max } = props;
   const randomNumber = getRandomInt(min, max);
   return <h2>{randomNumber}</h2>;
 };
