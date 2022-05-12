@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  background-color: rgba(237, 237, 237, 0.786);
+  border-radius: .5em;
+  overflow: hidden;
+  border: 3px solid red;
+  margin: .5em;
+}
+
+.card .title {
+  padding: 0em 1em;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+
+.card .content {
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  background-color: white;
+  padding: 1em;
+}
