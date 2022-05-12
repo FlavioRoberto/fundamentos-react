@@ -1,16 +1,21 @@
 import React from "react";
+import "./App.css";
 import First from "./components/basics/First";
 import WithParameter from "./components/basics/WithParameter";
 import Fragment from "./components/basics/Fragment";
 import Random from "./components/basics/Random";
 import Card from "./components/layouts/Card/Card";
-import "./App.css";
+import Family from "./components/basics/Family";
 
 const App = () => (
   <div id="app">
     <h1>React essentials</h1>
     <div className="content">
-      <Card title="Random numbers">
+      <Card title="Components with children" color="#2AB7CA">
+        <Family lastName="Son" />
+      </Card>
+
+      <Card title="Random numbers" color="#FA6900">
         <Random min={1} max={5} />
       </Card>
 
