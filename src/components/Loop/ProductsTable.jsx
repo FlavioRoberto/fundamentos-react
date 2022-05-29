@@ -5,7 +5,7 @@ const ProductsTable = () => {
     <tr key={product.id}>
       <td>{product.id}</td>
       <td>{product.name}</td>
-      <td>{product.price}</td>
+      <td>{product.price.toFixed(2)}</td>
     </tr>
   ));
 
@@ -15,7 +15,7 @@ const ProductsTable = () => {
         <tr>
           <th>Id</th>
           <th>Name</th>
-          <th>Price</th>
+          <th>Price ($)</th>
         </tr>
       </thead>
       <tbody>{productsItems}</tbody>

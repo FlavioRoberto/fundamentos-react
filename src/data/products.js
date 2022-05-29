@@ -5,7 +5,7 @@ const products = [
         price: 32.20
     },
     {
-        id: 1,
+        id: 2,
         name: "Shoes black",
         price: 28.30
     }

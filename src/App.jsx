@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { getRandomInt } from './services/number.service';
 import First from './components/basics/First';
 import WithParameter from './components/basics/WithParameter';
 import Fragment from './components/basics/Fragment';
@@ -9,12 +10,26 @@ import Family from './components/basics/Family';
 import FamilyMember from './components/basics/FamilyMember';
 import StudentsLists from './components/Loop/StudentsList';
 import ProductsTable from './components/Loop/ProductsTable';
+import EvenOrOdd from './components/conditionals/EvenOrOdd';
+import UserInfo from './components/conditionals/UserInfo';
 
 const App = () => (
   <div id='app'>
     <h1>React essentials</h1>
     <div className='content'>
-      <Card title='Products table' color='#2AB7CA'>
+      <Card title='User conditional info' color='#2AB12A'>
+        <UserInfo
+          user={{
+            name: 'Flávio',
+          }}
+        />
+      </Card>
+
+      <Card title='Even Or Odd' color='#2AB12A'>
+        <EvenOrOdd number={getRandomInt(1, 10)} />
+      </Card>
+
+      <Card title='Products table' color='#2AB7FA'>
         <ProductsTable />
       </Card>
 
@@ -22,7 +37,7 @@ const App = () => (
         <StudentsLists />
       </Card>
 
-      <Card title='Components with children' color='#2AB7CA'>
+      <Card title='Components with children' color='#2AB29A'>
         <Family lastName='Son'>
           <FamilyMember name='Goku' />
           <FamilyMember name='Gohan' />
