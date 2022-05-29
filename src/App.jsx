@@ -17,7 +17,15 @@ const App = () => (
   <div id='app'>
     <h1>React essentials</h1>
     <div className='content'>
-      <Card title='User conditional info' color='#2AB12A'>
+      <Card title='User conditional else' color='#2AB12A'>
+        <UserInfo
+          user={{
+            name: '',
+          }}
+        />
+      </Card>
+
+      <Card title='User conditional if' color='#2AB12A'>
         <UserInfo
           user={{
             name: 'Flávio',
