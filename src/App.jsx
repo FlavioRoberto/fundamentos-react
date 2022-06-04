@@ -12,11 +12,16 @@ import StudentsLists from './components/Loop/StudentsList';
 import ProductsTable from './components/Loop/ProductsTable';
 import EvenOrOdd from './components/conditionals/EvenOrOdd';
 import UserInfo from './components/conditionals/UserInfo';
+import ToChild from './components/comunication/ToChild';
 
 const App = () => (
   <div id='app'>
     <h1>React essentials</h1>
     <div className='content'>
+      <Card title='User conditional else' color='#2AB12A'>
+        <ToChild />
+      </Card>
+
       <Card title='User conditional else' color='#2AB12A'>
         <UserInfo
           user={{
