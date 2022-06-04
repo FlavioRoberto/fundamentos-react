@@ -1,8 +1,14 @@
+import { getRandomInt } from '../../services/number.service';
+
 const ToFather = (props) => {
+  const person = {
+    name: 'Flávio',
+    age: getRandomInt(18, 75),
+  };
   return (
     <div>
       <p>{props.title}</p>
-      <button onClick={e => props.onGetData('Hello there')}>Send</button>
+      <button onClick={() => props.onGetData(person)}>Send</button>
     </div>
   );
 };
