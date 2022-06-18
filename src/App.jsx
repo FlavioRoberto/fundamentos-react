@@ -15,11 +15,17 @@ import UserInfo from './components/conditionals/UserInfo';
 import ToChild from './components/comunication/ToChild';
 import InputControled from './components/Forms/InputControlled';
 import InputUncontroled from './components/Forms/InputUncontrolled';
+import { Counter } from './components/counter/Counter';
 
 const App = () => (
     <div id='app'>
         <h1>React essentials</h1>
         <div className='content'>
+
+            <Card title="Class components" color="#fe9c8f">
+                <Counter initialNumber={10} incrementBy={10} />
+            </Card>
+
             <Card title="Uncontrolled components - Input" color="#fe9c8f">
                 <InputUncontroled />
             </Card>
